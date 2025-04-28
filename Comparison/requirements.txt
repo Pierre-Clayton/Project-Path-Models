@@ -1,0 +1,26 @@
+streamlit
+openai
+jira
+langchain
+langchain-openai
+langchain-community # For loaders/vectorstores if needed beyond core
+faiss-cpu # Or faiss-gpu if you have CUDA setup
+pypdf
+python-dotenv # Good practice for API keys, though we also use session state
+pandas
+openpyxl
+markdown # For MarkdownLoader
+# --- Google Drive ---
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+# --- OneDrive (MS Graph API) ---
+msal
+requests
+# --- Optional but recommended for broader filetype support ---
+unstructured # For various file types including .md, .xlsx etc.
+# If using unstructured, you might need specific parsers, e.g.:
+# pip install "unstructured[md,xlsx]"
+# For PDF parsing with unstructured:
+# pip install "unstructured[local-inference]"
+# Or install specific libraries like pdfminer.six, python-pptx, etc.
